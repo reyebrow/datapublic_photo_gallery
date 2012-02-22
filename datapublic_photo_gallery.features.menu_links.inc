@@ -18,7 +18,7 @@ function datapublic_photo_gallery_menu_default_menu_links() {
     'link_title' => 'Photo Galleries',
     'options' => array(
       'attributes' => array(
-        'title' => 'Photo Galleries',
+        'title' => '',
       ),
     ),
     'module' => 'menu',
@@ -26,7 +26,7 @@ function datapublic_photo_gallery_menu_default_menu_links() {
     'external' => '0',
     'has_children' => '0',
     'expanded' => '0',
-    'weight' => '-49',
+    'weight' => '0',
     'parent_path' => 'node/43',
   );
   // Translatables

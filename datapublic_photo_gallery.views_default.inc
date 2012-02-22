@@ -31,7 +31,6 @@ function datapublic_photo_gallery_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '12';
   $handler->display->display_options['style_plugin'] = 'list';
-  $handler->display->display_options['style_options']['group_rendered'] = 0;
   $handler->display->display_options['style_options']['class'] = 'block-grid three-up';
   $handler->display->display_options['style_options']['wrapper_class'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
@@ -124,8 +123,6 @@ function datapublic_photo_gallery_views_default_views() {
   $handler = $view->new_display('block', 'Block: Media Room page', 'block');
   $handler->display->display_options['defaults']['use_more'] = FALSE;
   $handler->display->display_options['use_more'] = TRUE;
-  $handler->display->display_options['use_more_always'] = TRUE;
-  $handler->display->display_options['use_more_text'] = 'More photo galleries...';
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '2';
@@ -136,6 +133,23 @@ function datapublic_photo_gallery_views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['block_description'] = 'Photos: Media Room page';
+  $translatables['photo_gallery'] = array(
+    t('Master'),
+    t('Photo Galleries'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('Page'),
+    t('Block: Media Room page'),
+    t('More photo galleries...'),
+    t('Photos: Media Room page'),
+  );
   $export['photo_gallery'] = $view;
 
   return $export;

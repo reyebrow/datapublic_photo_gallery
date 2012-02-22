@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * datapublic_documents.context.inc
+ * datapublic_photo_gallery.context.inc
  */
 
 /**
@@ -33,14 +33,15 @@ function datapublic_photo_gallery_context_default_contexts() {
       ),
       'library_debug' => 0,
     ),
+    'menu' => 'photos',
   );
   $context->condition_mode = 0;
-  
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Context for photo gallery nodes');
   t('Photo Gallery');
   $export['photo_gallery_node'] = $context;
 
-  return $export;  
+  return $export;
 }
