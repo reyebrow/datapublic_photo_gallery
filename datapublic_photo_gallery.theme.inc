@@ -29,10 +29,10 @@ function datapublic_photo_gallery_preprocess_field(&$variables, $hook) {
  */
 function datapublic_photo_gallery_theme($existing, $type, $theme, $path) {
   // Provide template for document content type:
-  $document = isset($existing['field']) ? $existing['field'] : array();
-  $document['path'] = $path . '/theme';
-  $document['template'] = 'field--field-photo-gallery-image';
+  $photo_gallery = isset($existing['field']) ? $existing['field'] : array();
+  $photo_gallery['path'] = $path . '/theme';
+  $photo_gallery['template'] = 'field--field-photo-gallery-image';
   return array(
-    'field__field_photo_gallery_image' => $document,
+    'field__field_photo_gallery_image' => $photo_gallery,
   ); 
 } // datapublic_photo_gallery_theme()
