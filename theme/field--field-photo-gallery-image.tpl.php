@@ -47,7 +47,7 @@
     <?php
     $caption_call = '';
     if (isset($item['#item']['title']) && $item['#item']['title'] != '') {
-      $caption_call = ' data-caption="' . DATAPUBLIC_PHOTO_GALLERY_CAPTION_IDENTIFIER . $item['#item']['fid'] . '"';
+      $caption_call = ' data-caption="#' . DATAPUBLIC_PHOTO_GALLERY_CAPTION_IDENTIFIER . $item['#item']['fid'] . '"';
     }
     ?>
     <div class="orbit-slide"<?php print $caption_call; ?>>
