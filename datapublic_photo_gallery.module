@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Datapublic Photo Gallery feature.
- */
-
-include_once('datapublic_photo_gallery.features.inc');
