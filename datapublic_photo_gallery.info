@@ -1,7 +1,7 @@
 name = "Datapublic Photo Gallery"
 description = "Provides content types, views, contexts, libraries and logic for photo galleries."
 core = "7.x"
-package = "Data Public"
+package = "Datapublic"
 php = "5.2.4"
 version = "7.x-1.0"
 project = "datapublic_photo_gallery"
