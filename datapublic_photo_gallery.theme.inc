@@ -28,7 +28,7 @@ function datapublic_photo_gallery_preprocess_field(&$variables, $hook) {
  * Implements of hook_theme().
  */
 function datapublic_photo_gallery_theme($existing, $type, $theme, $path) {
-  // Provide template for document content type:
+  // Provide template for photo gallery image field:
   $photo_gallery = isset($existing['field']) ? $existing['field'] : array();
   $photo_gallery['path'] = $path . '/theme';
   $photo_gallery['template'] = 'field--field-photo-gallery-image';
