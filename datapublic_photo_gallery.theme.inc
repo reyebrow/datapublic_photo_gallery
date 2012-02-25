@@ -1,6 +1,7 @@
 <?php
 
 /**
+ * @file
  * Provides theming resources to be used by Photo Gallery content type.
  */
 
@@ -12,7 +13,7 @@ define('DATAPUBLIC_PHOTO_GALLERY_CAPTION_IDENTIFIER', 'gallery-caption-');
  */
 function datapublic_photo_gallery_preprocess_field(&$variables, $hook) {
   if ($variables['element']['#field_name'] == 'field_photo_gallery_image') {
-    foreach($variables['items'] as $key => $renderable) {
+    foreach ($variables['items'] as $key => $renderable) {
       $caption_span_pattern = '<span class="orbit-caption" id="%s%s">';
       $variables['captions'][] = array(
         '#markup' => $renderable['#item']['title'],
@@ -34,5 +35,5 @@ function datapublic_photo_gallery_theme($existing, $type, $theme, $path) {
   $photo_gallery['template'] = 'field--field-photo-gallery-image';
   return array(
     'field__field_photo_gallery_image' => $photo_gallery,
-  ); 
+  );
 } // datapublic_photo_gallery_theme()
