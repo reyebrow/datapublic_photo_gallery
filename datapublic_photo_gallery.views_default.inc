@@ -12,7 +12,7 @@ function datapublic_photo_gallery_views_default_views() {
 
   $view = new view;
   $view->name = 'photo_gallery';
-  $view->description = '';
+  $view->description = 'Default views for Photo Gallery listings.';
   $view->tag = 'default';
   $view->base_table = 'node';
   $view->human_name = 'Photo Gallery';
