@@ -27,7 +27,7 @@ function datapublic_photo_gallery_menu_default_menu_links() {
     'has_children' => '0',
     'expanded' => '0',
     'weight' => '0',
-    'parent_path' => 'node/43',
+    'parent_path' => 'media-room',
   );
   // Translatables
   // Included for use with string extractors like potx.
